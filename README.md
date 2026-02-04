@@ -1,99 +1,34 @@
-# Business Analyst Decision Engine
+# Business Analyst Decision Engine (CLI)
 
-A decision-thinking system that converts ambiguous business problems into
-structured analysis, executive insights, and actionable recommendations.
+A production-ready, portfolio-grade CLI that converts ambiguous business problems into:
+1) structured analysis,  
+2) executive summaries, and  
+3) portfolio-ready case narratives.
 
-This project demonstrates **how a Business Analyst should think** — not just
-how to analyze data.
+## Why this exists
+Most analytics projects stop at charts. This tool demonstrates **decision engineering**:
+- problem taxonomy → domain mapping → KPI selection → hypothesis tree → recommendations
+- output formats aligned to stakeholder needs (analyst / executive / portfolio)
 
----
+## Features
+- Domain-agnostic problem classification (growth, churn, cost, risk, efficiency, etc.)
+- Context-aware domain + KPI mapping (with confidence + rationale)
+- Hypothesis generation with confounders + test methods
+- Recommendation engine with prioritization (impact vs effort) + owners + risks
+- 3 stakeholder modes:
+  - `analyst` → structured diagnostic report
+  - `executive` → C-suite style 1-pager
+  - `portfolio` → interview/storytelling narrative
+- Production hardening: validation, clean errors, templates, config system
+- Tests: pytest coverage for CLI validation and behavior
+- Packaging: installable CLI (`ba-engine`) + version flag + license + changelog
 
-## Why This Project Exists
+## Quickstart
 
-In real organizations, business problems are rarely clear.
-Leaders don’t ask for dashboards — they ask for **decisions**.
-
-Most analytics projects start with data.
-This project starts with the **problem**.
-
-The goal of this system is to show how a Business Analyst:
-- Frames ambiguous business problems
-- Identifies what truly matters (KPIs)
-- Generates testable hypotheses
-- Translates analysis into executive-ready recommendations
-
----
-
-## What This App Does (At a Glance)
-
-**Input:**  
-A plain-English business problem
-
-**Output:**  
-Decision-ready artifacts tailored for different audiences
-
----
-
-## Core Thinking Engine (How It Thinks)
-
-The system follows a structured Business Analysis workflow:
-
-1. **Problem Classification**
-   - Identifies the true nature of the problem (growth, efficiency, risk, churn, etc.)
-   - Avoids treating symptoms as root causes
-
-2. **Domain & Context Mapping**
-   - Maps the problem to the correct business domain
-   - Applies realistic business assumptions
-
-3. **KPI Mapping**
-   - Selects decision-relevant KPIs (not vanity metrics)
-   - Distinguishes leading vs lagging indicators
-
-4. **Hypothesis Generation**
-   - Produces testable, business-driven hypotheses
-   - Explicitly states assumptions and risks
-
-5. **Recommendation Engine**
-   - Converts insights into prioritized actions
-   - Balances impact, effort, and execution risk
-
----
-
-## App Modes (Three Personas, One Engine)
-
-The same engine powers three distinct outputs:
-
-### 1. Analyst Mode
-**Audience:** Business Analyst / Analytics Team  
-**Output:**  
-- Structured problem breakdown  
-- KPI map  
-- Hypotheses with testing logic  
-- Detailed recommendations  
-
-### 2. Executive Mode
-**Audience:** Leadership / CXOs  
-**Output:**  
-- One-page executive summary  
-- Business impact framing  
-- Prioritized decisions (P1 / P2 / P3)  
-
-### 3. Portfolio Mode
-**Audience:** Hiring Managers / Interviewers  
-**Output:**  
-- Case story (STAR-style)  
-- Resume-ready bullets  
-- “Why trust this analyst?” signals  
-
----
-
-## Example: One-Line Demo Command
-
+### Run locally (repo)
 ```bash
-python app/main.py \
-  --mode executive \
-  --problem "Delivery productivity is declining and project timelines are slipping" \
+python app/main.py --mode analyst \
+  --problem "Delivery productivity is down and timelines are slipping" \
   --context "Service-based project delivery" \
   --industry "Professional services"
 ```
