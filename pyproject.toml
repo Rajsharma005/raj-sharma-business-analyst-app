@@ -1,0 +1,10 @@
+[project]
+name = "ba-engine"
+version = "0.1.0"
+description = "Business Analyst decision engine CLI for structured problem analysis."
+authors = [{name = "Raj Sharma"}]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+ba-engine = "app.main:main"

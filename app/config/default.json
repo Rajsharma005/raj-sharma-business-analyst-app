@@ -1,0 +1,56 @@
+{
+  "domain_taxonomy": {
+    "saas_tech": ["product_growth", "customer_success", "sales_ops"],
+    "banking_finance": ["lending_collections", "payments", "risk_compliance"],
+    "retail_ecommerce": ["merchandising", "fulfillment", "customer_support"],
+    "telecom": ["network_operations", "billing", "customer_retention"],
+    "manufacturing": ["production_ops", "quality", "supply_chain"],
+    "healthcare": ["clinical_ops", "revenue_cycle", "compliance"],
+    "logistics": ["warehouse_ops", "transportation", "order_fulfillment"],
+    "education": ["student_success", "content_delivery", "operations"],
+    "hospitality": ["reservations", "guest_experience", "operations"]
+  },
+  "keyword_hints": {
+    "domain": {
+      "saas_tech": ["saas", "subscription", "platform"],
+      "banking_finance": ["loan", "collections", "kyc"],
+      "retail_ecommerce": ["cart", "checkout", "sku"],
+      "telecom": ["network", "broadband", "carrier"],
+      "manufacturing": ["plant", "factory", "yield"],
+      "healthcare": ["patient", "clinic", "claims"],
+      "logistics": ["warehouse", "fleet", "delivery"],
+      "education": ["student", "course", "learning"],
+      "hospitality": ["hotel", "booking", "guest"]
+    },
+    "problem_type": {
+      "churn": ["churn", "retention", "renewal"],
+      "efficiency": ["delay", "cycle time", "productivity"],
+      "revenue": ["revenue", "sales", "conversion"],
+      "cost": ["cost", "expense", "budget"],
+      "risk": ["risk", "fraud", "incident"],
+      "compliance": ["audit", "regulatory", "policy"]
+    }
+  },
+  "kpi_library": {
+    "efficiency": {
+      "general": ["cycle time", "throughput", "rework rate"]
+    },
+    "churn": {
+      "general": ["logo churn", "revenue churn", "retention rate"]
+    }
+  },
+  "output_settings": {
+    "verbosity": "standard",
+    "include_sections": {
+      "analyst": {
+        "secondary_kpis": true
+      },
+      "executive": {
+        "executive_priorities": true
+      },
+      "portfolio": {
+        "portfolio_resume_bullets": true
+      }
+    }
+  }
+}
